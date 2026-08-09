@@ -1,0 +1,6 @@
+<!doctype html>
+<script>
+  const base = '/photo-studio/'
+  const path = location.pathname.slice(base.length - 1) + location.search + location.hash
+  location.replace(base + '?p=' + encodeURIComponent(path))
+</script>
